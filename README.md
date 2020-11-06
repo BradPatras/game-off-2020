@@ -16,6 +16,8 @@ It could have randomly generated levels where the masses of the planet and moon 
 
 A challenge will also be fitting this kind of game on a phone screen.  It would be easiest to keep the game camera static with just the planet and the moon in frame, but I imagine that getting to the lunar orbit might require the ship going far off to the left/right of the screen.  So I may also try to zoom or pan the camera to follow the ship while it's in transit.
 
+I also haven't decided how to handle the controls, it could be a one-shot deal where you choose how much power to use before the launch then your're locked in, or maybe the player has retro/prograde thruster control and fuel to worry about
+
 ## Dev Log
 
 I'm most comfortable in Android, so I'm going to use libGDX as my game engine.  I'm relying pretty heavily on tutorials to get all the basics set up.  I'm using the Ashley and Box2D libraries within the libGDX family.
