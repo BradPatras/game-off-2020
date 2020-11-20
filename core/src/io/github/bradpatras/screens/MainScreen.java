@@ -34,11 +34,11 @@ public class MainScreen implements Screen {
         world.setContactListener(new B2dContactListener());
         bodyFactory = BodyFactory.getInstance(world);
 
-        parent.assMan.queueAddSounds();
-        parent.assMan.manager.finishLoading();
-        atlas = parent.assMan.manager.get("images/game.atlas", TextureAtlas.class);
-        ping = parent.assMan.manager.get("sounds/ping.wav", Sound.class);
-        boing = parent.assMan.manager.get("sounds/boing.wav",Sound.class);
+        parent.assetManager.queueAddSounds();
+        parent.assetManager.manager.finishLoading();
+        atlas = parent.assetManager.manager.get("images/game.atlas", TextureAtlas.class);
+        ping = parent.assetManager.manager.get("sounds/ping.wav", Sound.class);
+        boing = parent.assetManager.manager.get("sounds/boing.wav",Sound.class);
 
         sb = new SpriteBatch();
         // Create our new rendering system
@@ -58,13 +58,13 @@ public class MainScreen implements Screen {
         engine.addSystem(new PlayerControlSystem(controller));
 
         // create some game objects
-        createPlayer();
-        createPlatform(2,2);
-        createPlatform(2,7);
-        createPlatform(7,2);
-        createPlatform(7,7);
-
-        createFloor();
+//        createPlayer();
+//        createPlatform(2,2);
+//        createPlatform(2,7);
+//        createPlatform(7,2);
+//        createPlatform(7,7);
+//
+//        createFloor();
 
     }
 
